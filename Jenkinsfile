@@ -6,5 +6,12 @@ pipeline {
                 sh 'python --version'
             }
         }
+//         post{
+//             always{
+//                 //after all stages excuted
+//             }
+//             failure{
+//             }
+//         }
     }
 }
