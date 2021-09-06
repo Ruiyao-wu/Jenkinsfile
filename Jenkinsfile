@@ -1,10 +1,25 @@
-pipeline {
+pipeline{
+
     agent any
-    stages {
-        stage('build') {
-            steps {
-                sh 'python --version'
-            }
+
+    stages{
+
+        stage("Build"){
+
+            steps{
+
+                withPythonEnv("C:\Users\WUU7FE\.conda\envs\FROP\"){
+
+                    bat "python--version"
+
+                }
+
+            echo "python is ok"
+
         }
-    }
+
+}
+
+}
+
 }
