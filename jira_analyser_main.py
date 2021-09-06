@@ -1,6 +1,4 @@
 from jira_download_driver import DriverBuilder
-from jira_app_creator import NewAPP
-from jira_analyser_database import VariablesDatabase, NoDeadlineDatabase, ReleaseDatabase, TodayDatabase, DataDatabase
 import pandas as pd
 
 def main():
